@@ -30,7 +30,8 @@
 * id: integer
 * user_id: ref
 * event_id: ref
-* presenter: bool
+* comment: string
+* is_presenter: bool
 * slide_url: string
 * created: date
 * modified: date
