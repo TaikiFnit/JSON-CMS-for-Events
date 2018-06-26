@@ -21,7 +21,7 @@ class Event(models.Model):
         return self.title
 
 
-class EventUsers(models.Model):
+class EventUser(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     event = models.ForeignKey(Event, on_delete=models.CASCADE)
     is_presenter = models.BooleanField()
