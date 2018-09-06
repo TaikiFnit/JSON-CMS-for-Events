@@ -16,6 +16,7 @@ class Event(models.Model):
     description = models.TextField()
     locale = models.CharField(max_length=255)
     date = models.DateTimeField('event date')
+    users = models.ManyToManyField(User, through='EventUser')
 
     def __str__(self):
         return self.title
